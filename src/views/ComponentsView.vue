@@ -5,7 +5,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import { RouterLink } from 'vue-router';
 
-const label = [{ name: 'Components' }];
 const mySidebar = [
   { name: 'Accordion', link: '/accordion' },
   { name: 'Alert', link: '/alert' },
@@ -77,7 +76,7 @@ const mySidebar = [
 <template>
   <section class=" px-[3%] relative bg-slate-200/50 dark:bg-black/70 min-h-screen flex items-center justify-center">
     <SidebarProvider>
-      <TheSidebar :group-labels="label" :menu-items="mySidebar" class="pt-17" />
+      <TheSidebar class="pt-17" />
       <div class="pt-18 pr-50">
         <Card class="border-0 shadow-transparent bg-transparent">
           <CardHeader>
