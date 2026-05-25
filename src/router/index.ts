@@ -27,6 +27,11 @@ const router = createRouter({
       name: 'alert',
       component: () => import('../components/TheAlert.vue'),
     },
+    {
+      path: '/alertDialog',
+      name: 'alertDialog',
+      component: () => import('../components/TheAlertDialog.vue'),
+    },
   ],
 })
 

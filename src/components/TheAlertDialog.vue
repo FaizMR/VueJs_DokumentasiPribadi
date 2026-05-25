@@ -2,12 +2,18 @@
 import TheSidebar from './TheSidebar.vue';
 import { SidebarProvider } from './ui/sidebar';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { AlertCircleIcon, CheckCircle2Icon, ChevronLeft, PopcornIcon } from '@lucide/vue'
+import { ChevronLeft } from '@lucide/vue'
 import {
-  Alert,
-  AlertDescription,
-  AlertTitle,
-} from '@/components/ui/alert'
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from '@/components/ui/alert-dialog'
 import { Button } from './ui/button';
 import { ChevronRight } from '@lucide/vue';
 
@@ -22,10 +28,10 @@ import { ChevronRight } from '@lucide/vue';
             <div class="grid grid-cols-2 gap-4">
               <div>
                 <CardTitle class="text-4xl text-slate-950 dark:text-white/80">
-                  Allert
+                  Allert Dialog
                 </CardTitle>
                 <CardDescription class="text-sm text-slate-950 dark:text-white/80">
-                  Menampilkan pemberitahuan untuk menarik perhatian pengguna.
+                  Dialog modal yang menyela pengguna dengan konten penting dan mengharapkan respons.
                 </CardDescription>
               </div>
               <div>
@@ -40,48 +46,43 @@ import { ChevronRight } from '@lucide/vue';
           </CardHeader>
           <CardContent>
             <div class="grid grid-cols-2 gap-4">
-              <div class="border-2 rounded-md px-10 py-10">
-                <div class="grid w-full max-w-xl items-start gap-4">
-                  <Alert>
-                    <CheckCircle2Icon />
-                    <AlertTitle>Success! Your changes have been saved</AlertTitle>
-                    <AlertDescription>
-                      This is an alert with icon, title and description.
-                    </AlertDescription>
-                  </Alert>
-                  <Alert>
-                    <PopcornIcon />
-                    <AlertTitle>This Alert has a title and an icon. No description.</AlertTitle>
-                  </Alert>
-                  <Alert variant="destructive">
-                    <AlertCircleIcon />
-                    <AlertTitle>Unable to process your payment.</AlertTitle>
-                    <AlertDescription>
-                      <p>Please verify your billing information and try again.</p>
-                      <ul class="mt-2 list-inside list-disc space-y-1">
-                        <li>Check your card details</li>
-                        <li>Ensure sufficient funds</li>
-                        <li>Verify billing address</li>
-                      </ul>
-                    </AlertDescription>
-                  </Alert>
-                </div>
+              <div class="border-2 rounded-md items-center justify-center flex">
+                <AlertDialog>
+                  <AlertDialogTrigger as-child>
+                    <Button variant="outline">
+                      Show Dialog
+                    </Button>
+                  </AlertDialogTrigger>
+                  <AlertDialogContent>
+                    <AlertDialogHeader>
+                      <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+                      <AlertDialogDescription>
+                        This action cannot be undone. This will permanently delete your
+                        account and remove your data from our servers.
+                      </AlertDialogDescription>
+                    </AlertDialogHeader>
+                    <AlertDialogFooter>
+                      <AlertDialogCancel>Cancel</AlertDialogCancel>
+                      <AlertDialogAction>Continue</AlertDialogAction>
+                    </AlertDialogFooter>
+                  </AlertDialogContent>
+                </AlertDialog>
               </div>
               <div class="border-2 h-16 rounded-md">
-                <div class="text-center py-4 h-105">
-                  <span>npx shadcn-vue@latest add alert</span>
+                <div class="text-center py-4 h-100">
+                  <span>npx shadcn-vue@latest add alert-dialog</span>
                 </div>
                 <div class="flex justify-end gap-2">
-                  <RouterLink to="/accordion" class="pr-2">
+                  <RouterLink to="/alert" class="pr-2">
                     <Button variant="ghost"
                       class="cursor-pointer text-slate-800 dark:text-white/85 bg-slate-200/50 dark:bg-white/10 hover:bg-slate-300/50 dark:hover:bg-white/20">
-                      <ChevronLeft class="w-6 h-6 text-white" />Accordion
+                      <ChevronLeft class="w-6 h-6 text-white" />Alert
                     </Button>
                   </RouterLink>
-                  <RouterLink to="/alertDialog">
+                  <RouterLink to="/aspectRatio">
                     <Button variant="ghost"
-                      class="cursor-pointer text-slate-800 dark:text-white/85 bg-slate-200/50 dark:bg-white/10 hover:bg-slate-300/50 dark:hover:bg-white/20">Alert
-                      Dialog
+                      class="cursor-pointer text-slate-800 dark:text-white/85 bg-slate-200/50 dark:bg-white/10 hover:bg-slate-300/50 dark:hover:bg-white/20">
+                      Aspect Ratio
                       <ChevronRight class="w-6 h-6 text-white" />
                     </Button>
                   </RouterLink>
