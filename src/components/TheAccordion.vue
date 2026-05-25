@@ -8,6 +8,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion'
+import { Button } from './ui/button';
+import { ChevronRight } from '@lucide/vue';
 
 </script>
 <template>
@@ -88,8 +90,16 @@ import {
                 </div>
               </div>
               <div class="border-2 h-16 rounded-md">
-                <div class="text-center py-4">
-                  <span>npx shadcn-vue@latest add accordion </span>
+                <div class="text-center py-4 h-86">
+                  <span>npx shadcn-vue@latest add accordion</span>
+                </div>
+                <div class="text-end ">
+                  <RouterLink to="/components">
+                    <Button variant="ghost"
+                      class="cursor-pointer text-slate-800 dark:text-white/85 bg-slate-200/50 dark:bg-white/10 hover:bg-slate-300/50 dark:hover:bg-white/20">Alert
+                      <ChevronRight class="w-6 h-6 text-white" />
+                    </Button>
+                  </RouterLink>
                 </div>
               </div>
             </div>
