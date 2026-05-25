@@ -37,6 +37,11 @@ const router = createRouter({
       name: 'aspectRatio',
       component: () => import('../components/TheAspectRatio.vue'),
     },
+    {
+      path: '/avatar',
+      name: 'avatar',
+      component: () => import('../components/TheAvatar.vue'),
+    },
   ],
 })
 
