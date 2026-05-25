@@ -25,7 +25,8 @@ import { ChevronRight } from '@lucide/vue';
                   Accordion
                 </CardTitle>
                 <CardDescription class="text-sm text-slate-950 dark:text-white/80">
-                  Disini kamu dapat menemukan semua komponen yang telah saya kumpulkan selama proses belajar
+                  Serangkaian judul interaktif yang disusun secara vertikal, yang masing-masing menampilkan bagian dari
+                  konten.
                 </CardDescription>
               </div>
               <div>
@@ -94,7 +95,7 @@ import { ChevronRight } from '@lucide/vue';
                   <span>npx shadcn-vue@latest add accordion</span>
                 </div>
                 <div class="text-end ">
-                  <RouterLink to="/components">
+                  <RouterLink to="/alert">
                     <Button variant="ghost"
                       class="cursor-pointer text-slate-800 dark:text-white/85 bg-slate-200/50 dark:bg-white/10 hover:bg-slate-300/50 dark:hover:bg-white/20">Alert
                       <ChevronRight class="w-6 h-6 text-white" />
