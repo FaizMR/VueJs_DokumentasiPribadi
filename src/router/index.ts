@@ -32,6 +32,11 @@ const router = createRouter({
       name: 'alertDialog',
       component: () => import('../components/TheAlertDialog.vue'),
     },
+    {
+      path: '/aspectRatio',
+      name: 'aspectRatio',
+      component: () => import('../components/TheAspectRatio.vue'),
+    },
   ],
 })
 
