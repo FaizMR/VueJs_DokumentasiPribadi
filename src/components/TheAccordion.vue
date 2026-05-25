@@ -91,7 +91,7 @@ import { ChevronRight } from '@lucide/vue';
                 </div>
               </div>
               <div class="border-2 h-16 rounded-md">
-                <div class="text-center py-4 h-86">
+                <div class="text-center py-4 h-100">
                   <span>npx shadcn-vue@latest add accordion</span>
                 </div>
                 <div class="text-end ">
