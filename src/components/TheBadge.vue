@@ -83,7 +83,7 @@ import { ChevronRight } from '@lucide/vue';
                   <RouterLink to="/breadcrumb">
                     <Button variant="ghost"
                       class="cursor-pointer text-slate-800 dark:text-white/85 bg-slate-200/50 dark:bg-white/10 hover:bg-slate-300/50 dark:hover:bg-white/20">
-                      breadcrumb
+                      Breadcrumb
                       <ChevronRight class="w-6 h-6 text-white" />
                     </Button>
                   </RouterLink>
