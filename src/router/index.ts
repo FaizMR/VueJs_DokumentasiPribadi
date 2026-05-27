@@ -52,6 +52,11 @@ const router = createRouter({
       name: 'breadcrumb',
       component: () => import('../components/TheBreadcrumb.vue'),
     },
+    {
+      path: '/button',
+      name: 'button',
+      component: () => import('../components/TheButton.vue'),
+    },
   ],
 })
 
