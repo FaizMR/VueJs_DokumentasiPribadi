@@ -42,10 +42,15 @@ const router = createRouter({
       name: 'avatar',
       component: () => import('../components/TheAvatar.vue'),
     },
-        {
+    {
       path: '/badge',
       name: 'badge',
       component: () => import('../components/TheBadge.vue'),
+    },
+    {
+      path: '/breadcrumb',
+      name: 'breadcrumb',
+      component: () => import('../components/TheBreadcrumb.vue'),
     },
   ],
 })
