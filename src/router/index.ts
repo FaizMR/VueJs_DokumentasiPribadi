@@ -62,6 +62,11 @@ const router = createRouter({
       name: 'buttonGroup',
       component: () => import('../components/TheButtonGroup.vue'),
     },
+    {
+      path: '/calendar',
+      name: 'calendar',
+      component: () => import('../components/TheCalendar.vue'),
+    },
   ],
 })
 
