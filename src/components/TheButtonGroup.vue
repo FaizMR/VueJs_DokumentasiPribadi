@@ -174,7 +174,7 @@ const label = ref('personal')
                   Size
                 </CardTitle>
                 <CardDescription class="text-sm text-slate-950 dark:text-white/80">
-                  Control the size of buttons using the size prop on individual buttons.
+                  Kontrol ukuran tombol menggunakan properti `size` pada masing-masing tombol.
                 </CardDescription>
               </div>
             </div>
