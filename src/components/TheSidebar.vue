@@ -24,7 +24,7 @@ const menuItems = [
   { name: 'Button Group', link: '/buttonGroup' },
   { name: 'Calendar', link: '/calendar' },
   { name: 'Card', link: '/card' },
-  { name: 'Corousel', link: '/corousel' },
+  { name: 'carousel', link: '/carousel' },
   { name: 'Chart', link: '/chart' },
   { name: 'Checkbox', link: '/checkbox' },
   { name: 'Collapsible', link: '/collapsible' },
