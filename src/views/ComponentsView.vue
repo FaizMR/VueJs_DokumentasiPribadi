@@ -17,7 +17,7 @@ const mySidebar = [
   { name: 'Button Group', link: '/buttonGroup' },
   { name: 'Calendar', link: '/calendar' },
   { name: 'Card', link: '/card' },
-  { name: 'Corousel', link: '/corousel' },
+  { name: 'carousel', link: '/carousel' },
   { name: 'Chart', link: '/chart' },
   { name: 'Checkbox', link: '/checkbox' },
   { name: 'Collapsible', link: '/collapsible' },
@@ -93,7 +93,7 @@ const mySidebar = [
                 class="hover:bg-slate-300/50 dark:hover:bg-white/20 rounded-md">
                 <Button variant="ghost" class="cursor-pointer text-slate-950 dark:text-white/95 ">{{
                   item.name
-                }}</Button>
+                  }}</Button>
               </RouterLink>
             </div>
           </CardContent>

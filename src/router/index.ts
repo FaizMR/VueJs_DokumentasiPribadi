@@ -72,6 +72,11 @@ const router = createRouter({
       name: 'card',
       component: () => import('../components/TheCard.vue'),
     },
+    {
+      path: '/carousel',
+      name: 'carousel',
+      component: () => import('../components/TheCarousel.vue'),
+    },
   ],
 })
 
