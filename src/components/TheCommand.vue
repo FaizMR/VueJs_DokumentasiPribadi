@@ -41,10 +41,10 @@ whenever(meta_j!, () => {
             <div class="grid grid-cols-2 gap-4">
               <div>
                 <CardTitle class="text-4xl text-slate-950 dark:text-white/80">
-                  Collapsible
+                  Command
                 </CardTitle>
                 <CardDescription class="text-sm text-slate-950 dark:text-white/80">
-                  Komponen interaktif yang memperluas/menyusutkan panel.
+                  Menu perintah yang cepat, dapat disusun, dan tanpa gaya untuk Vue.
                 </CardDescription>
               </div>
               <div>

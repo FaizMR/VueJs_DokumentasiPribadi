@@ -102,6 +102,11 @@ const router = createRouter({
       name: 'command',
       component: () => import('../components/TheCommand.vue'),
     },
+    {
+      path: '/contextMenu',
+      name: 'contextMenu',
+      component: () => import('../components/TheContextMenu.vue'),
+    },
   ],
 })
 
