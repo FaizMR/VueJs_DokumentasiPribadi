@@ -97,6 +97,11 @@ const router = createRouter({
       name: 'combobox',
       component: () => import('../components/TheCombobox.vue'),
     },
+    {
+      path: '/command',
+      name: 'command',
+      component: () => import('../components/TheCommand.vue'),
+    },
   ],
 })
 

@@ -30,7 +30,7 @@ const menuItems = [
   { name: 'Collapsible', link: '/collapsible' },
   { name: 'Combobox', link: '/combobox' },
   { name: 'Command', link: '/command' },
-  { name: 'Context Menu', link: '/contaxtMenu' },
+  { name: 'Context Menu', link: '/contextMenu' },
   { name: 'Data Table', link: '/dataTable' },
   { name: 'Date Picker', link: '/datePicker' },
   { name: 'Dialog', link: '/dialog' },
