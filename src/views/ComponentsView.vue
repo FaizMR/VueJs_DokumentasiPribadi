@@ -23,7 +23,7 @@ const mySidebar = [
   { name: 'Collapsible', link: '/collapsible' },
   { name: 'Combobox', link: '/combobox' },
   { name: 'Command', link: '/command' },
-  { name: 'Context Menu', link: '/contaxtMenu' },
+  { name: 'Context Menu', link: '/contextMenu' },
   { name: 'Data Table', link: '/dataTable' },
   { name: 'Date Picker', link: '/datePicker' },
   { name: 'Dialog', link: '/dialog' },
@@ -93,7 +93,7 @@ const mySidebar = [
                 class="hover:bg-slate-300/50 dark:hover:bg-white/20 rounded-md">
                 <Button variant="ghost" class="cursor-pointer text-slate-950 dark:text-white/95 ">{{
                   item.name
-                  }}</Button>
+                }}</Button>
               </RouterLink>
             </div>
           </CardContent>
