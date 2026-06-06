@@ -87,6 +87,11 @@ const router = createRouter({
       name: 'checkbox',
       component: () => import('../components/TheCheckbox.vue'),
     },
+    {
+      path: '/collapsible',
+      name: 'collapsible',
+      component: () => import('../components/TheCollapsible.vue'),
+    },
   ],
 })
 
