@@ -92,6 +92,11 @@ const router = createRouter({
       name: 'collapsible',
       component: () => import('../components/TheCollapsible.vue'),
     },
+    {
+      path: '/combobox',
+      name: 'combobox',
+      component: () => import('../components/TheCombobox.vue'),
+    },
   ],
 })
 
